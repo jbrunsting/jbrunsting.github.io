@@ -6,9 +6,12 @@
 </head>
 <body style="margin:0" onload="document.journalform.reset();">
 <form action="mailto:jacob.brunsting@gmail.com?subject=email-journal-entry" style="overflow: hidden; font-family: 'Helvetica', 'Arial', sans-serif;" method="post" enctype="text/plain" name="journalform" target="_top">
-    <div style="display: flex; flex-direction: column;position:absolute;top:0;bottom:0;width:100vw">
-<textarea name="entry" style="flex-grow:1" placeholder="" autofocus="true"></textarea></br>
-<input type="submit" value="Submit journal entry" style="height:50px">
+    <div style="display: flex; flex-direction: row;position:absolute;top:0;bottom:0;width:100vw">
+<textarea name="entry" style="flex-grow:1; font-size:18px" placeholder="" autofocus="true"></textarea></br>
+<div style="display: flex; flex-direction: column">
+<input type="reset" value="Reset" style="height:50vh">
+<input type="submit" value="Submit" style="height:50vh">
+</div>
     </div>
 </form>
 </body>
